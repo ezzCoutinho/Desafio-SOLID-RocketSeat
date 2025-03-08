@@ -21,7 +21,6 @@ class BloodTest(ExamInterface):
         self.exame = exame
 
     def aprovar_solicitacao_exame(self) -> None:
-
         if self.exame.tipo == "sangue":
             if b.verifica_condicoes_do_exame(self.exame):
                 print("Exame sanguíneo aprovado!")
